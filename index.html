@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Montserrat&family=Source+Sans+Pro&family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Preview Panel -->
+    <section class="preview-panel">
+        <h2><i class="fas fa-eye"></i> Resume</h2>
+
+        <div class="resume-paper" id="resumePreview">
+
+            <!-- Resume Header -->
+            <div class="resume-header">
+
+                <!-- CV PHOTO -->
+                <div class="profile-photo">
+                    <img src="photo.jpg" alt="Ajmal Abdul Rahimzai CV Photo">
+                </div>
+
+                <h1 id="previewName">Ajmal Abdulrahimzai</h1>
+                <p id="previewTitle">Computer Software Engineer And Web Devoloper</p>
+
+                <div class="contact-info" id="previewContact">
+                    <p>
+                        <i class="fas fa-envelope"></i> Ajmal_abdulrahimzai@hotmail.com |
+                        <i class="fas fa-phone"></i> +93 786 258 701 & +93 799 720 949 |
+                        <i class="fas fa-map-marker-alt"></i> Sheberghan, Jawzjan, Afghanistan
+                    </p>
+                </div>
+            </div>
+
+            <!-- Profile -->
+            <div class="resume-section">
+                <h2><i class="fas fa-user"></i> Profile</h2>
+                <p id="previewProfile">
+                    Motivated Computer Software Engineer with experience in programming,
+                    web development, IT problem-solving, and digital services.
+                    Strong technical background with excellent communication and teamwork skills.
+                </p>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="resume-section">
+                <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+                <div class="experience-item">
+                    <h3>Pharmacist Assistant</h3>
+                    <p class="company">Drug Store | 2014 – 2019</p>
+                    <p>
+                        Assisted pharmacists in dispensing medication, managing inventory,
+                        and supporting customers with medical product knowledge.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-section">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+
+                <p><strong>Computer Science – Software Engineering</strong><br>
+                Tolo-E-Saadat Higher Educational Institute (2019 – 2023)</p>
+
+                <p><strong>Pharmacy & Medicine</strong><br>
+                New Asian Medical Institute (2013 – 2015)</p>
+            </div>
+			<br>
+            <!-- Skills -->
+            <div class="resume-section">
+                <h2><i class="fas fa-tools"></i> Skills</h2>
+                <p id="previewSkills">
+                    HTML, CSS, JavaScript, React,  Java, PHP, C++, Python, MySQL,
+                    Website Design, Microsoft Office,
+                    Data Research, Lead Generation,
+                    Professional Photo Editing by Adobe Phohtoshop & Video Editing by Adobe premire, Software Troubleshooting
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Controls Panel -->
+    <aside class="controls-panel">
+        <h2><i class="fas fa-sliders-h"></i> Customize Design</h2>
+
+        <div class="control-group">
+            <h3><i class="fas fa-font"></i> Font Family</h3>
+            <select id="fontFamily">
+                <option value="'Open Sans', sans-serif">Open Sans</option>
+                <option value="'Roboto', sans-serif">Roboto</option>
+                <option value="'Montserrat', sans-serif">Montserrat</option>
+                <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+                <option value="'Lato', sans-serif">Lato</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <h3><i class="fas fa-palette"></i> Theme Color</h3>
+            <div class="color-options">
+                <button class="color-btn" style="background:#2563eb" data-color="#2563eb"></button>
+                <button class="color-btn" style="background:#059669" data-color="#059669"></button>
+                <button class="color-btn" style="background:#7c3aed" data-color="#7c3aed"></button>
+                <button class="color-btn" style="background:#dc2626" data-color="#dc2626"></button>
+                <button class="color-btn" style="background:#4f46e5" data-color="#4f46e5"></button>
+            </div>
+            <p>Selected Color: <span id="selectedColor">#2563eb</span></p>
+        </div>
+
+        <div class="control-group">
+            <h3><i class="fas fa-arrows-alt-v"></i> Line Spacing</h3>
+            <input type="range" id="lineSpacing" min="1.2" max="2.5" step="0.1" value="1.5">
+            <p>Current: <span id="spacingValue">1.5</span></p>
+        </div>
+
+        <div class="control-group">
+            <h3><i class="fas fa-edit"></i> Edit Content</h3>
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="editName" value="Ajmal Abdul Rahimzai">
+            </div>
+
+            <div class="form-group">
+                <label>Professional Title</label>
+                <input type="text" id="editTitle" value="Computer Software Engineer">
+            </div>
+
+            <div class="form-group">
+                <label>Profile Summary</label>
+                <textarea id="editProfile" rows="3">
+Motivated Computer Software Engineer with experience in programming,
+web development, IT problem-solving, and digital services.
+                </textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <button id="resetBtn" class="action-btn">Reset</button>
+            <button id="printBtn" class="action-btn">Print</button>
+            <button id="downloadBtn" class="action-btn">Download</button>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <p>Designed & Devoloped by Ajmal Abdulrahimzai</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

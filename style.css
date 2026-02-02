@@ -1,0 +1,368 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+header h1 {
+    color: #1e293b;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h1 i {
+    color: #2563eb;
+    margin-right: 10px;
+}
+
+header p {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Preview Panel */
+.preview-panel {
+    flex: 1 1 700px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.preview-panel h2 {
+    color: #1e293b;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2563eb;
+    display: flex;
+    align-items: center;
+}
+
+.preview-panel h2 i {
+    margin-right: 10px;
+    color: #2563eb;
+}
+
+/* Resume Paper */
+.resume-paper {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    min-height: 800px;
+    transition: all 0.3s ease;
+}
+
+/* Resume Header */
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #2563eb;
+}
+
+/* ===== CV PHOTO (ADDED) ===== */
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.profile-photo img {
+    width: 110px;          /* Standard CV size */
+    height: 110px;
+    object-fit: cover;     /* No stretching */
+    border-radius: 6px;    /* Professional CV look */
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+}
+/* =========================== */
+
+.resume-header h1 {
+    color: #1e293b;
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    transition: color 0.3s, font-family 0.3s;
+}
+
+.resume-header p {
+    color: #2563eb;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-info p {
+    color: #64748b;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+    color: #2563eb;
+}
+
+/* Resume Sections */
+.resume-section {
+    margin-bottom: 28px;
+    transition: all 0.3s ease;
+}
+
+.resume-section h2 {
+    color: #1e293b;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+}
+
+.resume-section h2 i {
+    margin-right: 10px;
+    color: #2563eb;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    color: #1e293b;
+    font-size: 1.2rem;
+}
+
+.company {
+    color: #2563eb;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.resume-section p {
+    margin-bottom: 8px;
+}
+
+/* Controls Panel */
+.controls-panel {
+    flex: 1 1 400px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.controls-panel h2 {
+    color: #1e293b;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #2563eb;
+    display: flex;
+    align-items: center;
+}
+
+.controls-panel h2 i {
+    margin-right: 10px;
+    color: #2563eb;
+}
+
+.control-group {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.control-group:last-child {
+    border-bottom: none;
+}
+
+.control-group h3 {
+    color: #475569;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.control-group h3 i {
+    margin-right: 10px;
+    color: #64748b;
+}
+
+/* Form Controls */
+select, input[type="text"], textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+    background-color: #f8fafc;
+}
+
+select:focus, input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Color Controls */
+.color-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.color-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid white;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Range Slider */
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #e2e8f0;
+    outline: none;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.action-btn {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.action-btn i {
+    margin-right: 10px;
+}
+
+.action-btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+#resetBtn {
+    background-color: #64748b;
+}
+
+#resetBtn:hover {
+    background-color: #475569;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+}
+
+footer i {
+    color: #ef4444;
+    margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .controls-panel {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .resume-paper {
+        padding: 25px;
+    }
+
+    .resume-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .color-options {
+        justify-content: center;
+    }
+}
